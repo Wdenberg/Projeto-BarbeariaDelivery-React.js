@@ -1,0 +1,61 @@
+.open {
+  display: flex !important;
+}
+
+#Container {
+  max-width: 600px;
+  height: 600px;
+  display: none;
+  background-color: rgba(68, 68, 68, 0.411);
+  border-radius: 30px;
+}
+
+.tela-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  margin: 80px;
+}
+
+.login-tela h1 {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.form-login {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+
+}
+
+.input-login {
+  width: 250px;
+  height: 40px;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.bnt-login {
+  width: 250px;
+  font-size: 17px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.bnt-login:hover {
+  background-color: #000;
+  transition: all ease 0.5s;
+}
