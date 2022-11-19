@@ -1,0 +1,29 @@
+.home-text {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+
+}
+
+
+
+.tela-login-tn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+@media (max-width: 526px) {
+  .home-text {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 425px) {
+  .home-text {
+    font-size: 55px;
+  }
+}

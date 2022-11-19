@@ -1,8 +1,15 @@
 import React from 'react';
-import ReactTypingEffect from 'react-typing-effect';
+import { Route, Routes } from 'react-router-dom';
+
+
+
+
 import './App.css';
-import Home from './componentes/home/home';
-import Login from './componentes/login/login';
+import { About } from './pages/about/about';
+
+import { Home } from './pages/home/home';
+import Login from './pages/login/login';
+import Menu from './pages/menu/home';
 
 
 
@@ -10,19 +17,17 @@ import Login from './componentes/login/login';
 const App = () => {
 
   return (
-    <div className='container'>
-      <Home />
-
-      <div className='home-text'>
-        <ReactTypingEffect speed={500}
-          text={["Studio da Barba"]}
-        />
+    <>
+      <div className='container'>
+        <Menu />
+        <Routes>
+          <Route path='/' element={<Home />}
+          />
+          <Route path='/about' element={<About />} />
+        </Routes>
       </div>
+    </>
 
-      <div className='tela-login-tn'>
-        < Login />
-      </div>
-    </div>
   );
 }
 

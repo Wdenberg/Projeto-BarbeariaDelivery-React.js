@@ -1,0 +1,108 @@
+.about-container {
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+  margin-left: 17px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.about-text h1 {
+  font-size: 50px;
+  margin-bottom: 17px;
+}
+
+.about-text .btn-about {
+  text-align: center;
+  align-self: center;
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.about-text .btn-about:hover {
+  background-color: #000;
+  transition: all ease 0.5s;
+}
+
+
+.about-telas {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-telas img {
+  height: 550px;
+  margin-bottom: 17px;
+  margin-left: 9px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+@media (max-width: 1024px) {
+  .about-container {
+    margin-top: 70px;
+  }
+
+  .about-telas {
+    margin-top: 70px;
+    flex-direction: column;
+  }
+
+  .about-telas img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 572px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-telas {
+
+    flex-direction: row;
+  }
+
+  .about-text {
+    padding: 30px;
+    margin: 30px;
+  }
+
+  .about-text h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-telas {
+    display: none;
+  }
+}

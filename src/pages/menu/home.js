@@ -1,7 +1,7 @@
 import './styled.css';
 
 
-const Home = () => {
+const Menu = () => {
 
   function handelClick() {
     let menuOpen = document.getElementById('Container');
@@ -18,7 +18,8 @@ const Home = () => {
       <div className='home-menu'>
         <nav>
           <ul>
-            <li><a>Sobre</a></li>
+            <li><a href='/'>Home</a></li>
+            <li><a href='/about'>Sobre</a></li>
           </ul>
         </nav>
       </div>
@@ -27,4 +28,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Menu;
